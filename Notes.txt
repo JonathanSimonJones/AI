@@ -4,6 +4,7 @@ FIS
 	Inputs
 	Outputs
 	DefuzzificationMethod
+	Rules
 	
 Input
 	Variable
@@ -26,3 +27,6 @@ DefuzzificationMethod
 
 Equation
 	Line
+	
+Rules
+	
