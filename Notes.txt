@@ -1,0 +1,28 @@
+FIS Heirachy
+
+FIS
+	Inputs
+	Outputs
+	DefuzzificationMethod
+	
+Input
+	Variable
+
+Output
+	Variable
+	
+Variable
+	Membership functions
+	Range
+	
+Membership Function
+	Equations
+	
+Range 
+	Min 
+	Max
+	
+DefuzzificationMethod
+
+Equation
+	Line
