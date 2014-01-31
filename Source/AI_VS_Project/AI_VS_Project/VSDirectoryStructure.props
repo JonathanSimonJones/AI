@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <SourcePath>$(SourcePath)</SourcePath>
+    <IncludePath>$(SolutionDir)\..\..\Source\Shaders;$(SolutionDir)\..\..\Source\Headers;$(SolutionDir)\..\..\Source\Sources;$(SolutionDir)\..\..\Assets\Textures;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)\..\..\Temp\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)\..\..\Temp\Intermediate\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>xcopy $(SolutionDir)\..\..\Source\Shaders $(SolutionDir)\..\..\Temp\Debug /s /Y
+xcopy $(SolutionDir)\..\..\Source\Shaders $(SolutionDir)\$(ProjectName) /s /Y
+xcopy $(SolutionDir)\..\..\Lib $(SolutionDir)\..\..\Temp\Debug /Y</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup />
+</Project>
